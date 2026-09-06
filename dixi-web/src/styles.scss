@@ -1,0 +1,54 @@
+@font-face {
+  font-family: '29LT Bukra';
+  src: url('/assets/fonts/29LTBukra-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: '29LT Bukra';
+  src: url('/assets/fonts/29LTBukra-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Hacen Algeria';
+  src: url('/assets/fonts/HacenAlgeria-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Hacen Algeria';
+  src: url('/assets/fonts/HacenAlgeria-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+:root {
+  --navy-900: #051224;
+  --navy-800: #0a1f3d;
+  --navy-700: #0f2a52;
+  --navy-600: #16407a;
+  --navy-accent: #2f6fed;
+
+  --bg: #ffffff;
+  --surface: #f4f6f9;
+  --text: #0a1f3d;
+  --text-muted: #5c6b7a;
+  --border: #e1e6ec;
+}
+
+html[data-theme='dark'] {
+  --bg: #051224;
+  --surface: #0a1f3d;
+  --text: #f4f6f9;
+  --text-muted: #a9b6c4;
+  --border: #16407a;
+}
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: '29LT Bukra', sans-serif;
+  transition: background .3s ease, color .3s ease;
+}
+
+html[lang='ar'], body[dir='rtl'] {
+  font-family: 'Hacen Algeria', sans-serif;
+}
