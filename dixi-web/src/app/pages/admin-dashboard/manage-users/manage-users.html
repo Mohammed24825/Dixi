@@ -1,0 +1,19 @@
+<h1>Manage Users</h1>
+<table>
+  <thead><tr><th>Name</th><th>Role</th><th>Status</th><th>Actions</th></tr></thead>
+  <tbody>
+    @for (u of users(); track u.id) {
+      <tr>
+        <td>{{ u.fullName }}</td>
+        <td>{{ u.role }}</td>
+        <td>{{ u.isSuspended ? 'Suspended' : 'Active' }}</td>
+        <td>
+          @if (u.role !== 'Admin') {
+            <button (click)="suspend(u)">{{ u.isSuspended ? 'Unsuspend' : 'Suspend' }}</button>
+          }
+          <a [routerLink]="u.role === 'Student' ? ['/admin', 'profile', 'student', u.id] : ['/admin', 'profile', 'instructor', u.id]">View Profile</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
