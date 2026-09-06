@@ -1,0 +1,97 @@
+<app-navbar></app-navbar>
+
+<main class="landing-container">
+  <section class="hero-section">
+    <div class="hero-badge"> Next-Gen Coding Academy</div>
+    <h1 class="hero-title">Master Coding.<br>Build Your Future.</h1>
+    <p class="hero-subtitle">
+      Dixi turns beginners into confident, job-ready developers through hands-on, 
+      project-based learning guided by industry mentors.
+    </p>
+    <div class="hero-actions">
+      <a routerLink="/courses" class="primary-btn">Explore Courses</a>
+    </div>
+  </section>
+
+  <section class="section courses-section">
+  <div class="section-header">
+    <span class="section-tag">Empower Your Career</span>
+    <h2>Our Courses</h2>
+    <p>Hands-on, project-based curriculum designed to build real-world proficiency.</p>
+  </div>
+
+  <div class="grid courses-grid">
+    @for (c of courses(); track c.id) {
+      <div class="card course-card">
+        <div class="card-header-row">
+          <span class="level-badge" [attr.data-level]="c.level?.toLowerCase()">
+            <lucide-icon [img]="BarChartIcon" [size]="14"></lucide-icon>
+            {{ c.level }}
+          </span>
+          <span class="price-tag">${{ c.price }}</span>
+        </div>
+
+        <h3 class="course-title">{{ c.title }}</h3>
+        <p class="course-description">{{ c.description }}</p>
+
+        <div class="course-meta">
+          <div class="meta-item">
+            <lucide-icon [img]="ClockIcon" [size]="16"></lucide-icon>
+            <span>{{ c.durationWeeks }} weeks</span>
+          </div>
+          <div class="meta-item">
+            <lucide-icon [img]="UserIcon" [size]="16"></lucide-icon>
+            <span>{{ c.instructorName }}</span>
+          </div>
+        </div>
+
+        <!-- <div class="card-footer">
+          <a [routerLink]="['/courses', c.id]" class="enroll-btn">
+            <span>View Details</span>
+            <lucide-icon [img]="ArrowRightIcon" [size]="16"></lucide-icon>
+          </a>
+        </div> -->
+      </div>
+    } @empty {
+      <div class="empty-state">
+        <lucide-icon [img]="BookOpenIcon" [size]="32"></lucide-icon>
+        <p>No courses available at the moment.</p>
+      </div>
+    }
+  </div>
+</section>
+
+  <section class="section instructors-section">
+  <div class="section-header">
+    <span class="section-tag">World-Class Mentors</span>
+    <h2>Meet the Instructors</h2>
+    <p>Learn directly from active industry professionals building software that scales.</p>
+  </div>
+
+  <div class="grid instructors-grid">
+    @for (i of instructors(); track i.id) {
+      <div class="card instructor-card">
+        <div class="avatar-wrapper">
+          <div class="avatar">
+            <span class="initials">{{ i.fullName ? i.fullName.charAt(0) : 'I' }}</span>
+          </div>
+          <div class="avatar-badge">
+            <lucide-icon [img]="CodeIcon" [size]="14"></lucide-icon>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3>{{ i.fullName }}</h3>
+          <span class="instructor-title">{{ i.title }}</span>
+          <p class="instructor-bio">{{ i.bio }}</p>
+        </div>
+      </div>
+    } @empty {
+      <div class="empty-state">
+        <lucide-icon [img]="UsersIcon" [size]="32"></lucide-icon>
+        <p>No instructors available at the moment.</p>
+      </div>
+    }
+  </div>
+</section>
+</main>

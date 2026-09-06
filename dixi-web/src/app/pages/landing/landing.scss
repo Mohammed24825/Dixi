@@ -1,0 +1,457 @@
+.landing-container {
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* Sections Base Styling */
+.section {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 100px 24px 80px;
+  text-align: center;
+  background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.08), transparent 70%);
+
+  .hero-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 99px;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--navy-accent);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+
+  .hero-subtitle {
+    max-width: 640px;
+    margin: 0 auto 36px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
+
+  .primary-btn {
+    display: inline-block;
+    background: var(--navy-accent);
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+    }
+  }
+}
+
+/* Cards & Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 24px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(37, 99, 235, 0.4);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* Course Card Details */
+.courses-section {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--navy-accent);
+      background: rgba(37, 99, 235, 0.1);
+      padding: 6px 14px;
+      border-radius: 99px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      margin: 0 0 12px;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+  }
+
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 28px;
+  }
+
+  .course-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: rgba(37, 99, 235, 0.4);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+      .enroll-btn lucide-icon {
+        transform: translateX(3px);
+      }
+    }
+
+    .card-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+
+      .level-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        padding: 4px 10px;
+        border-radius: 6px;
+        background: rgba(37, 99, 235, 0.1);
+        color: var(--navy-accent);
+
+        lucide-icon {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .price-tag {
+        font-size: 1.25rem;
+        font-weight: 800;
+        color: var(--text);
+        letter-spacing: -0.3px;
+      }
+    }
+
+    .course-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 10px;
+      letter-spacing: -0.3px;
+      line-height: 1.3;
+    }
+
+    .course-description {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin: 0 0 24px;
+      flex-grow: 1;
+    }
+
+    .course-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      margin-bottom: 20px;
+
+      .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        font-weight: 500;
+
+        lucide-icon {
+          color: var(--navy-accent);
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .card-footer {
+      .enroll-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 10px 16px;
+        background: rgba(37, 99, 235, 0.08);
+        color: var(--navy-accent);
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: background 0.2s ease, color 0.2s ease;
+
+        lucide-icon {
+          display: flex;
+          align-items: center;
+          transition: transform 0.2s ease;
+        }
+
+        &:hover {
+          background: var(--navy-accent);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  /* Empty State Styling */
+  .empty-state {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    background: var(--surface);
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+    color: var(--text-muted);
+    text-align: center;
+    gap: 12px;
+
+    p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+/* Instructor Card Details */
+.instructors-section {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--navy-accent);
+      background: rgba(37, 99, 235, 0.1);
+      padding: 6px 14px;
+      border-radius: 99px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      margin: 0 0 12px;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+  }
+
+  .instructors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px;
+  }
+
+  .instructor-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition:
+      transform 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: rgba(37, 99, 235, 0.4);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+      .avatar {
+        transform: scale(1.05);
+      }
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      margin-bottom: 20px;
+
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        /* Gradient background with subtle inner glow */
+        background: linear-gradient(135deg, var(--navy-accent), #2563eb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid var(--surface);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        transition: transform 0.25s ease;
+
+        .initials {
+          font-size: 1.8rem;
+          font-weight: 800;
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: -0.5px;
+        }
+      }
+
+      .avatar-badge {
+        position: absolute;
+        bottom: -2px;
+        right: -2px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: var(--navy-accent);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--surface);
+      }
+    }
+
+    .card-content {
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--text);
+        margin: 0 0 4px;
+        letter-spacing: -0.3px;
+      }
+
+      .instructor-title {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--navy-accent);
+        margin-bottom: 12px;
+      }
+
+      .instructor-bio {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.55;
+        margin: 0;
+      }
+    }
+  }
+
+  /* Empty State Styling */
+  .empty-state {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    background: var(--surface);
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+    color: var(--text-muted);
+    text-align: center;
+    gap: 12px;
+
+    p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+  }
+}
