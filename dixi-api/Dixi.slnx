@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Dixi.Api/Dixi.Api.csproj" />
+  <Project Path="Dixi.Application/Dixi.Application.csproj" />
+  <Project Path="Dixi.Domain/Dixi.Domain.csproj" />
+  <Project Path="Dixi.Infrastructure/Dixi.Infrastructure.csproj" />
+</Solution>

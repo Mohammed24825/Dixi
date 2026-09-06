@@ -1,0 +1,16 @@
+services:
+  dixi-db:
+    image: postgres:16
+    container_name: dixi-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dixi_admin
+      POSTGRES_PASSWORD: dixi_pass123
+      POSTGRES_DB: dixi_db
+    ports:
+      - "5454:5432"
+    volumes:
+      - dixi_pgdata:/var/lib/postgresql/data
+
+volumes:
+  dixi_pgdata:

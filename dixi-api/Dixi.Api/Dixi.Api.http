@@ -1,0 +1,6 @@
+@Dixi.Api_HostAddress = http://localhost:5032
+
+GET {{Dixi.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
