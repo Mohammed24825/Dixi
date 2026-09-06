@@ -1,0 +1,117 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 5%;
+  height: 65px;
+  box-sizing: border-box;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+
+  /* Brand Logo & Title */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+
+    .logo {
+      height: 34px;
+      width: auto;
+      transition: transform 0.2s ease;
+    }
+
+    .brand-text {
+      color: var(--text);
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.4px;
+    }
+
+    &:hover .logo {
+      transform: scale(1.05);
+    }
+  }
+
+  /* Right-side actions */
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Theme Toggle Icon Button */
+  .theme-toggle {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    transition: all 0.2s ease;
+
+    lucide-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-1px);
+
+      lucide-icon {
+        transform: rotate(15deg);
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  /* Login CTA Button */
+  .login-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--navy-accent), #2563eb);
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    transition: all 0.2s ease;
+
+    .login-icon {
+      display: flex;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.38);
+
+      .login-icon {
+        transform: translateX(2px);
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

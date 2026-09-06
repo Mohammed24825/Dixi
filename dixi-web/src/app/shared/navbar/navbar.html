@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <a routerLink="/home" class="brand">
+    <img src="/assets/logo.png" alt="Dixi" class="logo" />
+    <span class="brand-text"></span>
+  </a>
+
+  <div class="actions">
+    <button 
+      class="theme-toggle" 
+      (click)="theme.toggle()" 
+      [attr.aria-label]="'Switch theme'"
+    >
+      <lucide-icon [img]="theme.theme() === 'dark' ? SunIcon : MoonIcon" [size]="20"></lucide-icon>
+    </button>
+
+    @if (showLogin()) {
+      <a routerLink="/login" class="login-btn">
+        <span>Login</span>
+        <lucide-icon [img]="LogInIcon" [size]="16" class="login-icon"></lucide-icon>
+      </a>
+    }
+  </div>
+</nav>
