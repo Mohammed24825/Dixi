@@ -1,0 +1,11 @@
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/bin/Debug/net10.0/Dixi.Domain.deps.json
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/bin/Debug/net10.0/Dixi.Domain.dll
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/bin/Debug/net10.0/Dixi.Domain.pdb
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/obj/Debug/net10.0/Dixi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/obj/Debug/net10.0/Dixi.Domain.AssemblyInfoInputs.cache
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/obj/Debug/net10.0/Dixi.Domain.AssemblyInfo.cs
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/obj/Debug/net10.0/Dixi.Domain.csproj.CoreCompileInputs.cache
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/obj/Debug/net10.0/Dixi.Domain.dll
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/obj/Debug/net10.0/refint/Dixi.Domain.dll
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/obj/Debug/net10.0/Dixi.Domain.pdb
+/Users/Mohammed/Dixi/dixi-api/Dixi.Domain/obj/Debug/net10.0/ref/Dixi.Domain.dll

@@ -1,0 +1,15 @@
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/Dixi.Application.csproj.AssemblyReference.cache
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/Dixi.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/Dixi.Application.AssemblyInfoInputs.cache
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/Dixi.Application.AssemblyInfo.cs
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/Dixi.Application.csproj.CoreCompileInputs.cache
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/bin/Debug/net10.0/Dixi.Application.deps.json
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/bin/Debug/net10.0/Dixi.Application.dll
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/bin/Debug/net10.0/Dixi.Application.pdb
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/bin/Debug/net10.0/Dixi.Domain.dll
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/bin/Debug/net10.0/Dixi.Domain.pdb
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/Dixi.App.1E7EFA41.Up2Date
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/Dixi.Application.dll
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/refint/Dixi.Application.dll
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/Dixi.Application.pdb
+/Users/Mohammed/Dixi/dixi-api/Dixi.Application/obj/Debug/net10.0/ref/Dixi.Application.dll
